@@ -1,0 +1,234 @@
+:root {
+  /* Theme Colors */
+  --primary-color: #d72638;        /* Engine Red */
+  --secondary-color: #1f1f1f;      /* Tire Black */
+  --accent-color: #fbbf24;         /* Indicator Amber */
+  --background-light: #f4f4f4;     /* Dashboard Light */
+  --text-dark: #1a1a1a;
+  --text-muted: #6c757d;
+
+  /* Typography */
+  --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Effects */
+  --shadow-medium: 0 4px 15px rgba(0, 0, 0, 0.15);
+  --border-radius: 12px;
+}
+
+/* Reset and Base */
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  /* background-color: rgba(31, 31, 31, 0.85); */
+  background-color: var(--text-muted);
+}
+.navbar img {
+  height: 10vh;
+}
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-right: 15px;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('/Images/honda\ city.jpg') no-repeat center center/cover;
+  padding: 100px 0;
+  color: #fff;
+}
+.hero-section h1 {
+  font-size: 3.5rem;
+}
+.hero-section p {
+  font-size: 1.3rem;
+}
+
+
+#preowned-header{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('/Images/audi-2019-preowned-6.avif') no-repeat center center/cover;
+}
+#range-header{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('/Images/honda\ acoord\ 2.jpg') no-repeat center center/cover;
+}
+#contact-header{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('/Images/sedan\ 6.jpg') no-repeat center center/cover;
+}
+.brand-header{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('/Images/toyota\ fortuner.jpg') no-repeat center center/cover;
+}
+#brand-van{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('/Images/hiace-van6.jpg') no-repeat center center/cover;
+}
+.brands{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('/Images/bmw\ i8.jpg') no-repeat center center/cover;
+}
+
+
+
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+.card img {
+  height: 300px;
+  object-fit: cover;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
+}
+.card-title {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.card-text {
+  color: var(--text-muted);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-medium);
+  text-align: center;
+  border: 1px solid #f1f1f1;
+}
+
+.testimonial-stars {
+  color: var(--accent-color);
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.author-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info h5 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-dark);
+}
+
+.author-info span {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: -25px;
+}
+
+.carousel-control-next {
+  right: -25px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--text-muted);
+  /* color: #adb5bd; */
+}
+.footer h5 {
+  color: #ffffff;
+}
+.footer a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer a:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Utilities */
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.bg-light {
+  background-color: var(--background-light) !important;
+}
+
+/* Contact Page */
+iframe {
+  width: 100%;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 767px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+}

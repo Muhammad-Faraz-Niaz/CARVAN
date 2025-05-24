@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARVAN - Online Car Marketplace</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .dropdown-menu {
+  z-index: 1050; /* make sure it appears above cards */
+}
+.card {
+  overflow: visible !important; /* allow dropdowns to appear outside */
+}
+
+</style>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><img src="/Images/Carvan-removebg-preview.png" alt="carvan logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Brands</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="toyota.html">Toyota</a></li>
+              <li><a class="dropdown-item" href="honda.html">Honda</a></li>
+              <li><a class="dropdown-item" href="bmw.html">BMW</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="range.html">Range of Cars</a></li>
+          <li class="nav-item"><a class="nav-link" href="preowned.html">PreOwned Cars</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<header class="text-center py-5 bg-dark text-white brands">
+  <div class="container">
+    <h1 class="display-4">Explore Car Brands</h1>
+    <p class="lead">Top automotive brands and their latest models</p>
+  </div>
+</header>
+
+<section class="container py-5">
+  <div class="row g-4">
+
+    <!-- Brand: BMW -->
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="/Images/bmw 7.jfif" class="card-img-top p-3" alt="BMW Logo">
+        <div class="card-body">
+          <h5 class="card-title">BMW</h5>
+          <p class="card-text">German engineering excellence known for luxury and performance.</p>
+
+          <!-- Sub-menu Models -->
+          <div class="dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">
+              BMW Models
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item" href="bmw.html#x1">BMW X1</a></li>
+              <li><a class="dropdown-item" href="bmw.html#3series">BMW 3 Series</a></li>
+              <li><a class="dropdown-item" href="bmw.html#x5">BMW X5</a></li>
+              <li><a class="dropdown-item" href="bmw.html#i8">BMW i8</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brand: Toyota -->
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="/Images/Toyota corolla.jpg" class="card-img-top p-3" alt="Toyota Logo">
+        <div class="card-body">
+          <h5 class="card-title">Toyota</h5>
+          <p class="card-text">Reliable and fuel-efficient vehicles for all lifestyles.</p>
+
+          <!-- Sub-menu Models -->
+          <div class="dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">
+              Toyota Models
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item" href="toyota.html#corolla">Toyota Corolla</a></li>
+              <li><a class="dropdown-item" href="toyota.html#camry">Toyota Camry</a></li>
+              <li><a class="dropdown-item" href="toyota.html#fortuner">Toyota Fortuner</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brand: Honda -->
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="/Images/honda 2022.jpg" class="card-img-top p-3" alt="Honda Logo">
+        <div class="card-body">
+          <h5 class="card-title">Honda</h5>
+          <p class="card-text">Smart design and dependable performance with a sporty touch.</p>
+
+          <!-- Sub-menu Models -->
+          <div class="dropdown">
+            <button class="btn btn-outline-primary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">
+              Honda Models
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item" href="honda.html#civic">Honda Civic</a></li>
+              <li><a class="dropdown-item" href="honda.html#accord">Honda Accord</a></li>
+              <li><a class="dropdown-item" href="honda.html#brv">Honda BR-V</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>CARVAN</h5>
+          <p>Leading Online Car Marketplace offering new and pre-owned vehicles with verified specs and trusted service.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="about.html" class="text-white">About Us</a></li>
+            <li><a href="brands.html" class="text-white">Brands</a></li>
+            <li><a href="range.html" class="text-white">Range of Cars</a></li>
+            <li><a href="preowned.html" class="text-white">PreOwned Cars</a></li>
+            <li><a href="contact.html" class="text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Contact</h5>
+          <p>Email: <a href="mailto:info@carvan.com" class="text-white">info@carvan.com</a></p>
+          <p>Location: Geo-integrated showroom map available on Contact Us page.</p>
+        </div>
+      </div>
+      <hr >
+      <div class="text-center mt-3">
+        <small>&copy; 2025 CARVAN. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
